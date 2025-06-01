@@ -15,7 +15,7 @@ const Login = () => {
     event.preventDefault();
 
     const userData = { username, password };
-    const url = 'http://localhost:5000/login/';
+    const url = 'https://charge-view.onrender.com/login/';
 
     const options = {
       method: 'POST',

@@ -51,7 +51,7 @@ const Home = () => {
       try {
         const token = localStorage.getItem('jwt_token');
         const userId = localStorage.getItem('user_id');
-        const res = await fetch(`http://localhost:5000/stations/${userId}`, {
+        const res = await fetch(`https://charge-view.onrender.com/stations/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
@@ -101,7 +101,7 @@ const Home = () => {
 
 const createStation = async () => {
   const token = localStorage.getItem('jwt_token');
-  const res = await fetch('http://localhost:5000/station', {
+  const res = await fetch('https://charge-view.onrender.com/station', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -134,7 +134,7 @@ const updateStation = async () => {
 
   console.log(editId+'edit id');
 
-  const res = await fetch(`http://localhost:5000/station/${editId}`, {
+  const res = await fetch(`https://charge-view.onrender.com/station/${editId}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -198,7 +198,7 @@ const onSubmit = async (e) => {
   const handleDelete = async (id) => {
     const token = localStorage.getItem('jwt_token');
     try {
-      const res = await fetch(`http://localhost:5000/station/${id}`, {
+      const res = await fetch(`https://charge-view.onrender.com/station/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

@@ -11,7 +11,7 @@ const Profile = () => {
     const fetchUserDetails = async () => {
       const userId = localStorage.getItem("user_id");
       const jwtToken = localStorage.getItem("jwt_token");
-      const url = `http://localhost:5000/user/${userId}`;
+      const url = `https://charge-view.onrender.com/user/${userId}`;
       const options = {
         headers: {
           Authorization: `Bearer ${jwtToken}`,
