@@ -1,0 +1,111 @@
+.profile-card {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.03);
+}
+
+.profile-card h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+}
+
+.profile-row {
+    display: flex;
+    background: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.profile-row label {
+    font-weight: bold;
+    color: #555;
+}
+.sp1{
+  margin-left:146px;
+}
+.sp2{
+  margin-left:180px;
+}
+.sp3{
+  margin-left:166px;
+}
+.sp4{
+  margin-left:172px;
+}
+.sp5{
+  margin-left:160px;
+}
+.loading,
+.error {
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Aligns buttons in a row */
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.home-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Ensures Link components don’t inherit default styles */
+.button-container a {
+    text-decoration: none;
+}
