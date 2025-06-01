@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { locations } from '../../App'; // Import locations from App.js
-//import Station from '../Station/index.js';
 import Header from '../Header/index.js';
 import StationsMap from '../MapCon/index.js';
 import './index.css';

@@ -24,7 +24,7 @@ const Register = () => {
     event.preventDefault();
     const userData = { name, username, password, gender, email };
 
-    const url = 'http://localhost:5000/register/';
+    const url = 'https://charge-view.onrender.com/register/';
 
     const options = {
       method: 'POST',

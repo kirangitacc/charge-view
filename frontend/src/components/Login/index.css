@@ -111,6 +111,12 @@ body {
   border-color: #4f46e5;
 }
 
+.err-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .login-btn {
   background-color: #4f46e5;
   color: white;
@@ -126,11 +132,6 @@ body {
   background-color: #6366f1;
 }
 
-.err-msg {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
-}
 .btn-row {
   display: flex;
   flex-direction: row;
